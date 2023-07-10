@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Push Button App</title>
+  <style>
+    .container {
+      text-align: center;
+      margin-top: 200px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button id="pushBtn" class="btn">Push Me!</button>
+  </div>
+
+  <script>
+    const pushBtn = document.getElementById('pushBtn');
+
+    pushBtn.addEventListener('click', function() {
+      alert('Button pushed!');
+    });
+  </script>
+</body>
+</html>
